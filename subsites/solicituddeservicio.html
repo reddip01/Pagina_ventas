@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Tienda Online</title>
+        <link rel="stylesheet" href="/css/solicituddeservicio.css"/>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <img src="/images/logo.png"/>
+                <h1>Tienda Online Mercashop</h1>
+            </header>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/subsites/nuestratienda.html">Nuestra tienda</a>
+                    </li>
+                    <li>
+                        <a href="/subsites/servicios.html">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="/subsites/contactenos.html">Contactenos</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div>
+            <section id="content">
+                <article class="article">
+                    <h4>Solicitud de Servicio</h4>
+                    <form id="clienteForm">
+                        <div>
+                        <label for="nombre">Nombres :</label>
+                        <input type="text" id="nombre" required><br><br>
+                        </div>
+                        <div>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" required><br><br>
+                        </div>
+                        <Div>
+                        <label for="telefono">Número de celular:</label>
+                        <input type="text" id="telefono" pattern="[0-9]+" required><br><br>
+                        </Div>
+                        <div>
+                        <label for="servicio">Servicio que solicita:</label>
+                        <select id="servicio" required>
+                          <option value="Personalización">Personalización</option>
+                          <option value="Pedido Mayorista">Pedido Mayorista</option>
+                          <option value="Devolución">Devolución</option>
+                        </select><br><br>
+                        </div>
+                        <div>
+                        <input type="button" value="Enviar datos" id="enviar">
+                        <input type="button" value="Cancelar" id="cancelar" onclick="window.location.href='/index.html'">
+                    </div>
+                      </form>
+                </article>
+                
+            </section>
+      
+            <div class="clearfix"></div>
+            <footer>Tienda Online a nivel nacional Mercashop 2023</footer>
+        </div>
+        <script src="/JS/formulario.js"></script>
+    </body>
+</html>
